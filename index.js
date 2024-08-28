@@ -11,6 +11,7 @@ function onInit(){
     if(!localStorage.getItem('todo'))
         return ;
     todoList= JSON.parse(localStorage.getItem('todo')).todoList
+    updateUI();
 }
 
 onInit();
